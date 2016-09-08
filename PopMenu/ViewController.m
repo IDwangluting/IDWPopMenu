@@ -14,25 +14,6 @@
 
 @interface ViewController ()
 
-@property(nonatomic,strong)UIView *dynamicView;
-
-@property(nonatomic,strong)UIView *view1;
-@property(nonatomic,strong)UIView *view2;
-
-@property(nonatomic,strong)NSArray *viewArray;
-
-@property(nonatomic,strong)UIDynamicAnimator *dynamicAnimator;
-@property(nonatomic,strong)UISnapBehavior * snapBehavior;
-
-@property(nonatomic,strong)UISnapBehavior *snapBehavior1;
-@property(nonatomic,strong)UISnapBehavior *snapBehavior2;
-
-@property(nonatomic,strong)UICollisionBehavior *collisionBehavior;
-
-@property(nonatomic,strong)UILabel *lab;
-
-
-@property(nonatomic,strong)UIGravityBehavior *gravityBehavior;
 @end
 
 @implementation ViewController
@@ -41,32 +22,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(0, 50, ScreenWiidth, ScreenHeight)];
+    UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(0, 50, ScreenWiidth, 50)];
     label.textAlignment=NSTextAlignmentCenter;
     [self.view addSubview:label];
 
     self.view.backgroundColor=[UIColor grayColor];
     
-    UIImage *image1=[UIImage imageNamed:@"icon-email"];
-    UIImage *image2=[UIImage imageNamed:@"icon-facebook"];
-    UIImage *image3=[UIImage imageNamed:@"icon-twitter"];
-    UIImage *imagemain=[UIImage imageNamed:@"start"];
 
-
-    PopMenuView *popMenu=[[PopMenuView alloc]initWithMainImage:imagemain size:CGSizeMake(50, 50)];
+    PopMenuView *popMenu=[[PopMenuView alloc]initWithMainImage:[UIImage imageNamed:@"start"] size:CGSizeMake(50, 50)];
     
+    [popMenu addAttachImage:[UIImage imageNamed:@"icon-email"] action:^(PopMenuView *popView, NSInteger tag) {
+        label.text=[NSString stringWithFormat:@"选中了第%li个",tag];
+    }];
+    [popMenu addAttachImage:[UIImage imageNamed:@"icon-facebook"] action:^(PopMenuView *popView, NSInteger tag) {
+        label.text=[NSString stringWithFormat:@"选中了第%li个",tag];
+    }];
+    [popMenu addAttachImage:[UIImage imageNamed:@"icon-twitter"] action:^(PopMenuView *popView, NSInteger tag) {
+        label.text=[NSString stringWithFormat:@"选中了第%li个",tag];
+    }];
     popMenu.center=CGPointMake(ScreenWiidth/2, ScreenHeight-30);
-    
-    [popMenu addAttachImage:image1 action:^(PopMenuView *popView, NSInteger tag) {
-        label.text=[NSString stringWithFormat:@"选中了第%li个",tag];
-    }];
-    [popMenu addAttachImage:image2 action:^(PopMenuView *popView, NSInteger tag) {
-        label.text=[NSString stringWithFormat:@"选中了第%li个",tag];
-    }];
-    [popMenu addAttachImage:image3 action:^(PopMenuView *popView, NSInteger tag) {
-        label.text=[NSString stringWithFormat:@"选中了第%li个",tag];
-    }];
-  
     [self.view addSubview:popMenu];
 
     
