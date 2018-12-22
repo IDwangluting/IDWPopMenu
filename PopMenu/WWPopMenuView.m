@@ -1,18 +1,18 @@
 //
-//  PopMenuView.m
+//  WWPopMenuView.m
 //  PopMenu
 //
 //  Created by wangluting on 16/9/7.
 //  Copyright © 2016年 wangluting. All rights reserved.
 //
 
-#import "PopMenuView.h"
+#import "WWPopMenuView.h"
 
 #define radius (int)[UIScreen mainScreen].bounds.size.width * 0.65 / 2
 #define Height [UIScreen mainScreen].bounds.size.height
 #define Width  [UIScreen mainScreen].bounds.size.width
 
-@implementation PopMenuView {
+@implementation WWPopMenuView {
     NSMutableArray *_itemArray;
     NSMutableArray *_snapArray;
     UIDynamicAnimator *_dynaimcAnimatr;

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "PopMenuView.h"
+#import "WWPopMenuView.h"
 
 #define  ScreenHeight (int)[UIScreen mainScreen].bounds.size.height
 #define ScreenWiidth  (int)[UIScreen mainScreen].bounds.size.width
@@ -26,15 +26,15 @@
     label.textAlignment=NSTextAlignmentCenter;
     [self.view addSubview:label];
 
-    PopMenuView *popMenu=[[PopMenuView alloc]initWithMainImage:[UIImage imageNamed:@"start"]];
+    WWPopMenuView *popMenu=[[WWPopMenuView alloc]initWithMainImage:[UIImage imageNamed:@"start"]];
     
-    [popMenu addAttachImage:[UIImage imageNamed:@"icon-email"] action:^(PopMenuView *popView, NSInteger tag) {
+    [popMenu addAttachImage:[UIImage imageNamed:@"icon-email"] action:^(WWPopMenuView *popView, NSInteger tag) {
         label.text=[NSString stringWithFormat:@"选中了第%li个",tag];
     }];
-    [popMenu addAttachImage:[UIImage imageNamed:@"icon-facebook"] action:^(PopMenuView *popView, NSInteger tag) {
+    [popMenu addAttachImage:[UIImage imageNamed:@"icon-facebook"] action:^(WWPopMenuView *popView, NSInteger tag) {
         label.text=[NSString stringWithFormat:@"选中了第%li个",tag];
     }];
-    [popMenu addAttachImage:[UIImage imageNamed:@"icon-twitter"] action:^(PopMenuView *popView, NSInteger tag) {
+    [popMenu addAttachImage:[UIImage imageNamed:@"icon-twitter"] action:^(WWPopMenuView *popView, NSInteger tag) {
         label.text=[NSString stringWithFormat:@"选中了第%li个",tag];
     }];
     popMenu.center = CGPointMake(ScreenWiidth/2, ScreenHeight- 60);

@@ -1,5 +1,5 @@
 //
-//  PopMenuView.h
+//  WWPopMenuView.h
 //  PopMenu
 //
 //  Created by wangluting on 16/9/7.
@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-@class PopMenuView;
+@class WWPopMenuView;
 
-typedef void(^PopAction)(PopMenuView *popView,NSInteger tag );
+typedef void(^PopAction)(WWPopMenuView *popView,NSInteger tag );
 
-@interface PopMenuView : UIView
+@interface WWPopMenuView : UIView
 
 - (instancetype)initWithMainImage:(UIImage *)mainImage;
 

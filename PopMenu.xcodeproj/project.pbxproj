@@ -15,7 +15,7 @@
 		F017E3DF1D80153000082EFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F017E3DD1D80153000082EFF /* LaunchScreen.storyboard */; };
 		F017E3EA1D80153000082EFF /* PopMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F017E3E91D80153000082EFF /* PopMenuTests.m */; };
 		F017E3F51D80153000082EFF /* PopMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F017E3F41D80153000082EFF /* PopMenuUITests.m */; };
-		F017E4041D803C9F00082EFF /* PopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F017E4031D803C9F00082EFF /* PopMenuView.m */; };
+		F017E4041D803C9F00082EFF /* WWPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F017E4031D803C9F00082EFF /* WWPopMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		F017E3F01D80153000082EFF /* PopMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F017E3F41D80153000082EFF /* PopMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopMenuUITests.m; sourceTree = "<group>"; };
 		F017E3F61D80153000082EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F017E4021D803C9F00082EFF /* PopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuView.h; sourceTree = "<group>"; };
-		F017E4031D803C9F00082EFF /* PopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuView.m; sourceTree = "<group>"; };
+		F017E4021D803C9F00082EFF /* WWPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWPopMenuView.h; sourceTree = "<group>"; };
+		F017E4031D803C9F00082EFF /* WWPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPopMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 				F017E3D31D80153000082EFF /* AppDelegate.m */,
 				F017E3D51D80153000082EFF /* ViewController.h */,
 				F017E3D61D80153000082EFF /* ViewController.m */,
-				F017E4021D803C9F00082EFF /* PopMenuView.h */,
-				F017E4031D803C9F00082EFF /* PopMenuView.m */,
+				F017E4021D803C9F00082EFF /* WWPopMenuView.h */,
+				F017E4031D803C9F00082EFF /* WWPopMenuView.m */,
 				F017E3D81D80153000082EFF /* Main.storyboard */,
 				F017E3DB1D80153000082EFF /* Assets.xcassets */,
 				F017E3DD1D80153000082EFF /* LaunchScreen.storyboard */,
@@ -278,7 +278,7 @@
 				F017E3D71D80153000082EFF /* ViewController.m in Sources */,
 				F017E3D41D80153000082EFF /* AppDelegate.m in Sources */,
 				F017E3D11D80153000082EFF /* main.m in Sources */,
-				F017E4041D803C9F00082EFF /* PopMenuView.m in Sources */,
+				F017E4041D803C9F00082EFF /* WWPopMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
