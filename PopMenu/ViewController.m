@@ -42,15 +42,9 @@
     }];
     popMenu.center=CGPointMake(ScreenWiidth/2, ScreenHeight-30);
     [self.view addSubview:popMenu];
-
-    
-    
 }
 
-
-
--(BOOL)shouldAutorotate
-{
+-(BOOL)shouldAutorotate {
     return NO;
 }
 
