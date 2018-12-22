@@ -20,16 +20,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor grayColor];
     
     UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(0, 50, ScreenWiidth, 50)];
     label.textAlignment=NSTextAlignmentCenter;
     [self.view addSubview:label];
 
-    self.view.backgroundColor=[UIColor grayColor];
-    
-
-    PopMenuView *popMenu=[[PopMenuView alloc]initWithMainImage:[UIImage imageNamed:@"start"] size:CGSizeMake(50, 50)];
+    PopMenuView *popMenu=[[PopMenuView alloc]initWithMainImage:[UIImage imageNamed:@"start"]];
     
     [popMenu addAttachImage:[UIImage imageNamed:@"icon-email"] action:^(PopMenuView *popView, NSInteger tag) {
         label.text=[NSString stringWithFormat:@"选中了第%li个",tag];
@@ -40,11 +37,11 @@
     [popMenu addAttachImage:[UIImage imageNamed:@"icon-twitter"] action:^(PopMenuView *popView, NSInteger tag) {
         label.text=[NSString stringWithFormat:@"选中了第%li个",tag];
     }];
-    popMenu.center=CGPointMake(ScreenWiidth/2, ScreenHeight-30);
+    popMenu.center = CGPointMake(ScreenWiidth/2, ScreenHeight- 60);
     [self.view addSubview:popMenu];
 }
 
--(BOOL)shouldAutorotate {
+- (BOOL)shouldAutorotate {
     return NO;
 }
 

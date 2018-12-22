@@ -9,17 +9,12 @@
 #import <UIKit/UIKit.h>
 @class PopMenuView;
 
-typedef void(^Action)(PopMenuView *popView,NSInteger tag );
+typedef void(^PopAction)(PopMenuView *popView,NSInteger tag );
 
 @interface PopMenuView : UIView
 
-@property(nonatomic,copy)Action action;
+- (instancetype)initWithMainImage:(UIImage *)mainImage;
 
-@property(nonatomic,assign)CGSize mainMenuItemSize;
-@property(nonatomic,assign)CGSize attachMenuItemSize;
-
--(instancetype)initWithMainImage:(UIImage *)mainImage size:(CGSize) size;
-
--(void)addAttachImage:(UIImage *)image action:(Action)action;
+- (void)addAttachImage:(UIImage *)image action:(PopAction)action;
 
 @end
