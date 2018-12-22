@@ -7,19 +7,19 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'MMPopMenu'
-  s.version          = '0.0.1'
+  s.name             = 'WWPopMenu'
+  s.version          = '0.1.0'
   s.summary          = 'MMURLRouter is a small pop animation.'
   s.description      = <<-DESC
     MMURLRouter is a small pop animation,you can use it more easier
     DESC
-  s.homepage         = 'https://github.com/IDwangluting/MMPopMenu'
+  s.homepage         = 'https://github.com/IDwangluting/WWPopMenu'
   s.license          = "Copyright (c) 2018年 wangluitng. All rights reserved."
   s.author           = { 'IDwangluting' => 'm13051699286@163.com' }
-  s.source           = { :git => 'https://github.com/IDwangluting/MMPopMenu.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/IDwangluting/WWPopMenu.git', :tag => s.version.to_s }
   
   s.ios.deployment_target   = '8.0'
-  s.source_files            = 'MMPopMenu/Classes/**/*'
+  s.source_files            = 'WWPopMenu/Classes/**/*'
   s.frameworks              = 'UIKit'
 end
 
