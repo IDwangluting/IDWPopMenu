@@ -1,0 +1,16 @@
+PODS:
+  - WWPopMenu (0.1.0)
+
+DEPENDENCIES:
+  - WWPopMenu (from `../`)
+
+EXTERNAL SOURCES:
+  WWPopMenu:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WWPopMenu: 7688606dc8e0c848c0efbc41e20a90f2ed4a84c6
+
+PODFILE CHECKSUM: d8b29a5ab8948041f2b1de8d678e1e3b3c479380
+
+COCOAPODS: 1.5.3
